@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Minds Coaching Centre - Expert Tutoring in Dhanbad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        #about {
+            background: #f8f9fa;
+        }
+
+        .testimonials {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .testimonials h2 {
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #5568d3;
+        }
+
+        .whatsapp-button {
+            display: block;
+            background: #25D366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background: #20BA5A;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Bright Minds</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Excellence in Education</h1>
+            <p>Expert coaching for Classes 6-12 | Board Exams | Competitive Exams</p>
+            <a href="tel:+919876543210" class="cta-button">📞 Call Now: +91 98765 43210</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Bright Minds Coaching Centre has been shaping futures for over 10 years in Dhanbad. Our experienced
+                    faculty members are dedicated to providing personalized attention and quality education to every
+                    student. We believe in building strong foundations and nurturing academic excellence through
+                    innovative teaching methods and a supportive learning environment.</p>
+                <p style="margin-top: 1rem;">With a proven track record of outstanding results, we've helped hundreds of
+                    students achieve their academic goals and secure admissions to top institutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Board Exam Coaching</h3>
+                    <p>Comprehensive preparation for CBSE, ICSE, and State Board examinations. Expert guidance for
+                        Classes 10 and 12 with focused practice and regular assessments.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Foundation Classes</h3>
+                    <p>Building strong fundamentals for Classes 6-9 in Mathematics, Science, and English. Interactive
+                        learning sessions that make concepts clear and interesting.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Competitive Exam Prep</h3>
+                    <p>Specialized coaching for JEE, NEET, and other entrance examinations. Strategic study plans, mock
+                        tests, and expert mentorship to ensure success.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Doubt Clearing Sessions</h3>
+                    <p>Regular doubt clearing classes and one-on-one attention to ensure no student is left behind.
+                        We're committed to clearing every concept thoroughly.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Online & Offline Classes</h3>
+                    <p>Flexible learning options with both online and offline classes. Quality education accessible from
+                        the comfort of your home or at our well-equipped centre.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Study Materials</h3>
+                    <p>Comprehensive study materials, practice papers, and test series designed by our expert faculty to
+                        complement classroom teaching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"The teachers at Bright Minds are exceptional. They explained every concept patiently and helped
+                        me score 95% in my Class 12 boards. Highly recommended!"</p>
+                    <div class="testimonial-author">- Priya Sharma, Class 12 Pass-out</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Thanks to Bright Minds, I cleared JEE with a great rank. The study material and mock tests were
+                        excellent. The faculty is truly dedicated and supportive."</p>
+                    <div class="testimonial-author">- Rahul Kumar, JEE Qualifier</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"My daughter's confidence and grades have improved significantly since joining Bright Minds. The
+                        personal attention she receives is remarkable."</p>
+                    <div class="testimonial-author">- Mrs. Anjali Verma, Parent</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <a href="/" class="whatsapp-button" target="_blank">
+                    💬 WhatsApp Us Now
+                </a>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 123 Bank More, Dhanbad, Jharkhand 826001</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Email:</strong> info@brightminds.com</p>
+                    <p><strong>Hours:</strong> Mon-Sat: 8:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bright Minds Coaching Centre. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        }
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>
