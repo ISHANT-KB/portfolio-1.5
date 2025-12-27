@@ -450,6 +450,25 @@ nav:hover {
   }
 }
 
+.skill-card:nth-child(1) .bar span {
+  --value: 90%;
+}
+.skill-card:nth-child(2) .bar span {
+  --value: 85%;
+}
+.skill-card:nth-child(3) .bar span {
+  --value: 75%;
+}
+.skill-card:nth-child(4) .bar span {
+  --value: 80%;
+}
+.skill-card:nth-child(5) .bar span {
+  --value: 70%;
+}
+.skill-card:nth-child(6) .bar span {
+  --value: 50%;
+}
+
 /* Focus styles for accessibility */
 .rightsection a:focus,
 .project-btn:focus,
@@ -606,6 +625,11 @@ nav:hover {
 
 .contact-btn:hover {
   background: #2f6bdb;
+}
+
+.form-status {
+  margin-top: 10px;
+  color: #fff;
 }
 
 .contact-info {
