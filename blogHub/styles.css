@@ -234,6 +234,14 @@ header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
+.featured-card:nth-child(1) .featured-image {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.featured-card:nth-child(2) .featured-image {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
 .featured-content {
   padding: 2rem;
 }
